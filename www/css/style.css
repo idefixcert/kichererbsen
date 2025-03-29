@@ -1,9 +1,9 @@
 body {
     height: 100%;
-    /* On "top" */
     background: #fef5d6;
     margin: 0px;
     padding: 0px;
+    font-size: 1.0rem;
 }
 
 h1, h2, h3, h4, .text-red {
@@ -23,32 +23,25 @@ h2 {
     margin-top: 20px;
     margin-left: 25px;
 }
+
 a {
     color: #000000;
 }
-
-
-/*pre:has(>code) {*/
-/*    background-color: #eac7a0;*/
-/*https://caniuse.com/css-has*/
-/*}*/
-
 
 p {
     font-family: Arial, Sans serif;
     margin-left: 25px;
     margin-right: 25px;
     margin-top: -10px;
-    padding:10px;
-    font-size: 1.0rem;
+    padding: 10px;
     line-height: 125%;
 }
 
-.bild{
+.bild {
     position: relative;
     float: right;
     margin: 20px;
-  }
+}
 
 .banner {
     display: flex;
@@ -56,11 +49,11 @@ p {
 }
 
 .logo {
-   width: 25vw;
-   min-width: 300px;
-   padding: 20px;
-   margin-top: 20px;
-   margin-right: 10px;
+    width: 25vw;
+    min-width: 300px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-right: 10px;
 }
 
 .transbox {
@@ -72,39 +65,64 @@ p {
     padding: 20px;
 }
 
-.full{
+.full {
     width: 100vw;
     height: 100vh;
     background: #ffffff;
 }
 
-.menubar{
-    height: 15px;
-    background-image: linear-gradient( rgb(255, 255, 255) 50%, rgb(246, 214, 28) 50%);
+.menubar {
+    background-image: linear-gradient(
+            rgb(255, 255, 255) 40%,
+            rgb(246, 214, 28) 50%,
+            rgb(246, 214, 28) 60%,
+            rgb(255, 255, 255) 60%
+    );
 }
-
-.menubar1{
-    height: 15px;
-    background-color:  rgb(255, 255, 255) 50%;
+button:first-child {
+    margin-left: 50px;
 }
-
-.button{
+.button {
     background-color: rgb(236, 146, 20);
     margin-left: 10px;
-    padding:0;
+    padding: 0;
     width: 40px;
     height: 40px;
     border-radius: 100%;
     border: 0px;
 }
 
+.button img {
+    padding-top: 3px;
+    width: 25px;
+}
+
 .button:hover {
-        transform: translateY(-6px);
-      }
+    transform: translateY(-6px);
+}
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-device-width: 480px) {
     .logo {
-      min-width: 300px;
+        min-width: 450px;
     }
-  }
 
+    body {
+        font-size: 2.0rem;
+    }
+
+    h1 {
+        font-size: 3.0rem;
+    }
+
+    h2 {
+        font-size: 2.0rem;
+    }
+
+    .button {
+        height: 80px;
+        width: 80px;
+    }
+    .button img {
+        width: 48px;
+    }
+}
