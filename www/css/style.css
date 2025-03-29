@@ -1,0 +1,110 @@
+body {
+    height: 100%;
+    /* On "top" */
+    background: #fef5d6;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1, h2, h3, h4, .text-red {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: rgb(236, 146, 20);
+}
+
+h1 {
+    margin-top: 40px;
+    margin-left: 25px;
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+a {
+    color: #000000;
+}
+
+
+/*pre:has(>code) {*/
+/*    background-color: #eac7a0;*/
+/*https://caniuse.com/css-has*/
+/*}*/
+
+
+p {
+    font-family: Arial, Sans serif;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: -10px;
+    padding:10px;
+    font-size: 1.0rem;
+    line-height: 125%;
+}
+
+.bild{
+    position: relative;
+    float: right;
+    margin: 20px;
+  }
+
+.banner {
+    display: flex;
+    background: #fef5d6;
+}
+
+.logo {
+   width: 25vw;
+   min-width: 300px;
+   padding: 20px;
+   margin-top: 20px;
+   margin-right: 10px;
+}
+
+.transbox {
+    flex-grow: 1;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: larger;
+    color: rgb(236, 146, 20);
+    padding: 20px;
+}
+
+.full{
+    width: 100vw;
+    height: 100vh;
+    background: #ffffff;
+}
+
+.menubar{
+    height: 15px;
+    background-image: linear-gradient( rgb(255, 255, 255) 50%, rgb(246, 214, 28) 50%);
+}
+
+.menubar1{
+    height: 15px;
+    background-color:  rgb(255, 255, 255) 50%;
+}
+
+.button{
+    background-color: rgb(236, 146, 20);
+    margin-left: 10px;
+    padding:0;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 0px;
+}
+
+.button:hover {
+        transform: translateY(-6px);
+      }
+
+@media only screen and (max-width: 600px) {
+    .logo {
+      min-width: 300px;
+    }
+  }
+
