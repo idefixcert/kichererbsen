@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Geschützter Bereich"
+AuthUserFile /data/web/e11173/html/.htpasswd
+Require user kicher
