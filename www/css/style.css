@@ -1,6 +1,6 @@
 body {
     height: 100%;
-    background: #fef5d6;
+    background: #ffffff;
     margin: 0px;
     padding: 0px;
     font-size: 1.0rem;
@@ -98,7 +98,7 @@ button:first-child {
 }
 
 .button:hover {
-    transform: translateY(-6px);
+    transform: translateY(-8px);
 }
 
 @media only screen and (max-device-width: 480px) {
